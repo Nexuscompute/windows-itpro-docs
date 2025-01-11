@@ -1,7 +1,7 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-ms.date: 06/19/2024
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -164,7 +164,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!-- DOCacheHost-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Clients don't talk to multiple Microsoft Connected Cache (MCC) servers at the same time. If you configure a list of MCC servers in this policy, the clients will round robin until they successfully connect to an MCC server. The clients have no way to determine if the MCC server has the content or not. If the MCC server doesn't have the content, it caches the content as it is handing the content back to the client.
+> Clients don't talk to multiple Microsoft Connected Cache servers at the same time. If you configure a list of Connected Cache servers in this policy, the clients will round robin until they successfully connect to a Connected Cache server. The clients have no way to determine if the Connected Cache server has the content or not. If the Connected Cache server doesn't have the content, it caches the content as it is handing the content back to the client.
 <!-- DOCacheHost-Editable-End -->
 
 <!-- DOCacheHost-DFProperties-Begin -->
@@ -502,7 +502,7 @@ The recommended value is 1 minute (60).
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5030310](https://support.microsoft.com/help/5030310) [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DODisallowCacheServerDownloadsOnVPN-Applicability-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-OmaUri-Begin -->
@@ -578,7 +578,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 <!-- DODownloadMode-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The Delivery Optimization service on the clients checks to see if there are peers and/or an MCC server which contains the content and determines the best source for the content.
+> The Delivery Optimization service on the clients checks to see if there are peers and/or a Connected Cache server which contains the content and determines the best source for the content.
 <!-- DODownloadMode-Editable-End -->
 
 <!-- DODownloadMode-DFProperties-Begin -->
@@ -1670,7 +1670,7 @@ This policy allows an IT Admin to define the following details:
 <!-- DOVpnKeywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5030310](https://support.microsoft.com/help/5030310) [10.0.22621.2361] and later <br> ✅ Windows Insider Preview |
 <!-- DOVpnKeywords-Applicability-End -->
 
 <!-- DOVpnKeywords-OmaUri-Begin -->
